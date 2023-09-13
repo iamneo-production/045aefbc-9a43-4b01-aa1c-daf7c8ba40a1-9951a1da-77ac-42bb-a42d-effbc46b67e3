@@ -32,7 +32,7 @@ public class OrganizerController {
 //        return organizerService.getUnsoldPlayersByCategory(category);
 //    }
 
-    // Endpoint to assign an unsold player to a team
+   // Endpoint to assign an unsold player to a team
     @PostMapping("/assign-player")
     public ResponseEntity<Boolean> assignPlayerToTeam(@RequestParam Long playerId, @RequestParam Long teamId) {
         organizerService.assignPlayerToTeam(playerId, teamId);
